@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/category', ['as' => 'category.get', 'uses' => 'CategoryController@get']);
+        
+
+    
