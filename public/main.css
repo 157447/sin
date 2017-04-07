@@ -4,12 +4,10 @@ body {
 }
 
 .main-menu {
-    background: white;
-    padding: 15px;
-    width: 70vw;
+    padding: 0;
     margin: 0 auto;
-    opacity: 0.5;
-    cursor: pointer;
+    width: 70vw;   
+    opacity: 1;
 }
 
 .main-menu ul {
@@ -21,7 +19,6 @@ body {
     background: white;
     padding: 15px;
     cursor: pointer;
-    width: 100%;
     height: auto;
 }
 
@@ -29,21 +26,10 @@ body {
 .main-menu:hover {
         opacity: 1;
     }
-    .main-section {
+    
+.main-section {
     background: white;
-    padding: 15px;
-    width: 70vw;
-    margin: 0 auto;
-    }
-    
-.category-menu {
-    background: #269abc;
-    padding: 15px;
-    width: 70vw;
-    margin: 0 auto;
-    opacity: 1;
-    
-    
+    margin: 30px 0 ; 
         
     }
         

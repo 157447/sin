@@ -6,12 +6,15 @@
 @endforeach
 </ul>
 
-<form method="POST">
-    <span>Category name</span>
-    <input type="test" name="name" placeholder="...">
+
+      <form class="category-form" method="POST" action="{{route("category.post")}}">
+          <div class="form-group">
+              <label>Title</label>
+    <input type="text" name="title" class="form-control:" placeholder="...">
+      </div>      
     <input type="hidden" name="token" value="{{csrf_token()}}">
-    <button type="submit">Add category</button> 
-    <button type="reset">Cancel</button> 
+    <button type="submit" class="btn btn-default" >Add category</button> 
+    <button type="reset" class="btn btn-default" >Cancel</button> 
 </form>
 
 

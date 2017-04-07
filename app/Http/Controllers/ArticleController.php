@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
+use App\Category;
 
 use App\Http\Requests;
 
@@ -16,11 +17,12 @@ class ArticleController extends Controller
     $content = array_get($data, "content");
     
     $article = new Article();
+    $category = Category::find($category_id);
+    $article->category()->associate($category);
     $article->title = $title;
-    $content->content = $content;
-    
-    $article->save();
-    return redirect(route("article.get"));
+    $article->content = $content;
+    $article->save();      
+    return redirect(route("category.get", ["id=> $category_id"]));
 }
  public function get(){
         $id = request()->route("id");

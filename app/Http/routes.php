@@ -22,7 +22,7 @@ Route::post('/category/', array('as' => 'category.post', 'uses' => 'CategoryCont
 
 Route::get('/article/{id?}', array('as' => 'article.get', 'uses' => 'ArticleController@get'));
 
-Route::post('/article/', array('as' => 'article.post', 'uses' => 'ArticleController@post'));
+Route::post('/article/', array('as' => 'article.post', 'uses' => 'ArticleController@create'));
         
 
     
