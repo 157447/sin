@@ -10,7 +10,7 @@
       <form class="category-form" method="POST" action="{{route("article.post")}}">
           <div class="form-group">
               <label>Title</label>
-    <input type="text" name="title" class="form-control:" placeholder="...">
+    <input type="text" name="title" class="form-control" placeholder="...">
       </div>
           <div class="form-group">
               <label>Content</label>

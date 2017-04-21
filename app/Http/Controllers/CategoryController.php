@@ -22,7 +22,7 @@ class CategoryController extends Controller
            return view("category", ["category"=>$category]);
 }
 public function create(){
-    $data = request()->all;
+    $data = request()->all();
     $name = array_get($data, "name");
     if(is_null($name) || strlen($name) == 0){
         return redirect(route("category.get"));

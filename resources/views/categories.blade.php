@@ -10,10 +10,10 @@
       <form class="category-form" method="POST" action="{{route("category.post")}}">
           <div class="form-group">
               <label>Title</label>
-    <input type="text" name="title" class="form-control:" placeholder="...">
+              <input onkeyup="validInput()" id="name" type="text" name="name" class="form-control" placeholder="...">
       </div>      
     <input type="hidden" name="token" value="{{csrf_token()}}">
-    <button type="submit" class="btn btn-default" >Add category</button> 
+    <button type="submit" class="btn btn-default" disabled >Add category</button> 
     <button type="reset" class="btn btn-default" >Cancel</button> 
 </form>
 

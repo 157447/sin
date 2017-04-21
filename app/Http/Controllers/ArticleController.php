@@ -11,7 +11,7 @@ use App\Http\Requests;
 class ArticleController extends Controller
 {
     public function create(){
-    $data = request()->all;
+    $data = request()->all();
     $category_id = array_get($data, "category_id");
     $title = array_get($data, "title");
     $content = array_get($data, "content");
@@ -22,7 +22,7 @@ class ArticleController extends Controller
     $article->title = $title;
     $article->content = $content;
     $article->save();      
-    return redirect(route("category.get", ["id=> $category_id"]));
+    return redirect(route("category.get", ["id"=> $category_id]));
 }
  public function get(){
         $id = request()->route("id");
