@@ -23,6 +23,10 @@ Route::post('/category/', array('as' => 'category.post', 'uses' => 'CategoryCont
 Route::get('/article/{id?}', array('as' => 'article.get', 'uses' => 'ArticleController@get'));
 
 Route::post('/article/', array('as' => 'article.post', 'uses' => 'ArticleController@create'));
+
+Route::get('/comment/{id?}', array('as' => 'comment.get', 'uses' => 'CommentController@get'));
+
+Route::post('/comment/', array('as' => 'comment.post', 'uses' => 'CommentController@create'));
         
 
     

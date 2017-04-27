@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test site</title>
+        <title>Kangur site</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href='{{asset('main.css')}}'>
         <link rel="stylesheet" href='{{asset('css/bootstrap.min.css')}}'>
@@ -23,8 +23,9 @@
             </div>          
                 <div class="col-md-2"></div>
         </div>
-        <footer>        
-        </footer>
+        <div id="footer">
+       Copyright &copy; Kangur
+   </div>
         <button id="bgChanger" type= "button" class="btn btn-danger" onclick="changeBg('{{asset('piesel.jpg')}}', '{{asset('kangur2.jpg')}}')">change bg</button>
     </body>
 </html>

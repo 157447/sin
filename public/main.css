@@ -1,13 +1,16 @@
+
 body {
     background: url('kangur2.jpg') fixed;
     background-size: cover;
 }
 
 .main-menu {
-    padding: 0;
+    padding: 40px;
     margin: 0 auto;
-    width: 70vw;   
+    width: 100%;   
     opacity: 1;
+    text-align: center;
+    
 }
 
 .main-menu ul {
@@ -16,7 +19,7 @@ body {
     list-style: none;
 }
 .main-menu li {
-    background: white;
+    background: #efefef;
     padding: 15px;
     cursor: pointer;
     height: auto;
@@ -28,13 +31,26 @@ body {
     }
     
 .main-section {
-    background: white;
-    margin: 30px 0 ; 
+    background: #efefef;
+    margin: 30px 0;
         
     }
  #bgChanger {
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 20px;
     }
-        
+ 
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+p.one {
+ text-align: center;
+}
